@@ -1,3 +1,4 @@
+/* Apply border-box model to all elements */
 * {
   box-sizing: border-box;
 }
@@ -38,12 +39,14 @@
   }
 }
 
+/* General styling for the header */
 .header h1 {
   text-align: center;
   font-weight: bold;
   font-size: 40px;
 }
 
+/* Flexbox layout for columns */
 .columns {
   display: flex;
   flex-wrap: wrap;
@@ -59,16 +62,34 @@
   padding-left: 20px;
 }
 
+/* Styling for card components */
 .card {
-  background-color: white;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin-top: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
   max-width: 100%;
 }
 
+.card h1, .card h2 {
+  margin-top: 0;
+}
+
+.card ol {
+  padding-left: 20px;
+}
+
+/* Footer styling */
 footer {
   background-color: #232733;
   color: white;
@@ -108,6 +129,7 @@ footer {
   text-decoration: underline;
 }
 
+/* Responsive adjustments for columns */
 @media (max-width: 768px) {
   .columns {
     flex-direction: column;

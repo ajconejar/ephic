@@ -1,3 +1,16 @@
+:root {
+    --primary-color: #6f9e61;
+    --secondary-color: #7dbb76;
+    --background-color: #f4f4f4;
+    --shape-color: #e0f2e9;
+    --hero-bg-color: #ffffff;
+    --navbar-bg-color: #6f9e61;
+    --navbar-hover-bg-color: #7dbb76;
+    --text-color: #333;
+    --light-text-color: #666;
+  }
+  
+
 /* Variables for consistent theming */
 :root {
   --primary-color: #6f9e61; /* Earthy green */
